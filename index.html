@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>YouTube Player Pro</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="wrap">
+
+  <div class="brand">
+    <h1>YouTube Player</h1>
+    <p>Paste a link and watch videos with history</p>
+  </div>
+
+  <div class="card">
+
+    <div class="top">
+      <input id="url" type="text" placeholder="Paste YouTube URL..." />
+      <button onclick="watchVideo()">Watch</button>
+      <button onclick="clearHistory()">Clear History</button>
+    </div>
+
+    <div id="result" class="result">
+      <iframe id="player" class="player" allowfullscreen></iframe>
+    </div>
+
+    <div class="history">
+      <h3>📜 History</h3>
+      <div id="historyList"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
